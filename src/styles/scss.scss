@@ -1,0 +1,11 @@
+@import 'roboto.css';
+$color: rgba(48, 183, 236, 0.733);
+.sass {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 200px;
+    text-align: center;
+    color: $color;
+}
