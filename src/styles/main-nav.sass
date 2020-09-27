@@ -3,27 +3,24 @@
   flex-direction: row
   justify-content: space-between
   margin-top: 35px
-
-.main-nav__list
-  margin: 0
-  padding: 0
-  list-style: none
-  display: flex
-
-.main-nav__link
-  font:
-    color: #191919
-    size: 12px
-    weight: bold
-    family: Montserrat
-  line-height: 24px
-  letter-spacing: 1px
-  text-decoration: none
-  color: black
-
-.main-nav__item
-  margin:
-    right: 28px
-
-.main-nav__item:last-child
-  margin: 0
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+  &__link
+    font:
+      size: 12px
+      weight: bold
+      family: Montserrat
+    color: $color-h1
+    line-height: 24px
+    letter-spacing: 1px
+    text-decoration: none
+    &--active
+      color: $color-active
+  &__item
+    margin:
+      right: 28px
+    &:last-child
+      margin: 0

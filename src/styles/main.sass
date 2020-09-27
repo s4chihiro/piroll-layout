@@ -1,8 +1,8 @@
 @import fonts
+@import colors
 @import logo
 @import page-header
 @import main-nav
-
 
 .container
   max-width: 1170px
@@ -17,4 +17,16 @@
 .grid-wrapper__item
   min-height: 100px
   //border: 1px solid #000
+
+@media (max-width: 1199px)
+  .container
+    max-width: 960px
+
+@media (max-width: 991px)
+  .container
+    max-width: 750px
+  
+@media (max-width: 768px)
+  .container
+    max-width: 560px
   

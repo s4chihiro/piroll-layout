@@ -1,18 +1,48 @@
 .page-header
   display: flex
-  flex-direction: column
   background-color: #e9e9e9
-
+  &-wrapper
+    height: 100%
+    display: flex
+    flex-direction: column
+  &__banner-who-are-we
+    margin-top: 166px
 .banner-who-are-we
-  max-width: 482px
+  max-width: 505px
   align-self: flex-end
   font:
     family: Montserrat
+  &__caption
+    color: #1d1d1d
+    letter-spacing: -0.7px
+    font: 
+      size: 38px
+    margin: 0
+      bottom: 26px
+  &__description
+    //max-width: 479px
+    margin: 0
+      left: 4px
+    color: #787878
+    font:
+      size: 18px
+      weight: normal
+    line-height: 28px
+    letter-spacing: -0.9px
+  &__button-contact-us
+    margin-top: 36px
 
-.banner-who-are-we__caption
-  font: 
-    size: 30px
-  margin: 0
-
-.banner-who-are-we__description
-  margin: 0
+.button-contact-us
+  border: none
+  width: 180px
+  height: 54px
+  background-color: #10c9c3
+  // Style for "contact us"
+  color: #ffffff
+  font:
+    family: Montserrat
+    size: 12px
+    weight: 500
+  text-transform: uppercase
+  // Text style for "contact us"
+  letter-spacing: 1.2px
