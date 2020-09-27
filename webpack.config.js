@@ -55,7 +55,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            '@styles': path.resolve(__dirname, 'src/styles')
+            '@styles': path.resolve(__dirname, 'src/styles'),
+            '@images': path.resolve(__dirname, 'src/public/images')
         }
     },
     devtool: isDev ? 'source-map' : '',
@@ -74,13 +75,9 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/public/images/favicon-32x32.png'),
+                    from: path.resolve(__dirname, 'src/public/images/logo.png'),
                     to: path.resolve(__dirname, 'dist')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/public/images/favicon.ico'),
-                    to: path.resolve(__dirname, 'dist')
-                },
+                }
             ]
         }),
         new MiniCssExtractPlugin({
