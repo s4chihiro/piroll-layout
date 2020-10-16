@@ -77,6 +77,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/public/images/logo.png'),
                     to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/public/images/signature.png'),
+                    to: path.resolve(__dirname, 'dist')
                 }
             ]
         }),
